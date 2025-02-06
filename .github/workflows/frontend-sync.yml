@@ -4,12 +4,12 @@ on:
     types: [submodule-main-updated]
 
 env:
-  EXPECTED_SUBMODULE: "Tikit-frontend"
+  EXPECTED_SUBMODULE: "Tickify-frontend"
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-    if: github.event.client_payload.submodule == 'MITP-frontend'
+    if: github.event.client_payload.submodule == 'Tickify-frontend'
     steps:
       - name: Checkout main repository
         uses: actions/checkout@v2
