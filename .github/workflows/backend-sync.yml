@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+  repository_dispatch:
+    types: [submodule-update]
 
 jobs:
   sync:
@@ -30,6 +32,5 @@ jobs:
             git push
           else
             echo "No changes to commit"
-          fi
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
