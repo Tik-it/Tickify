@@ -1,6 +1,6 @@
-[submodule "Tikit-backend"]
-	path = Tikit-backend
+[submodule "Tickify-backend"]
+	path = Tickify-backend
 	url = https://github.com/Tik-it/Tickify-backend
-[submodule "Tikit-frontend"]
-	path = Tikit-frontend
+[submodule "Tickify-frontend"]
+	path = Tickify-frontend
 	url = https://github.com/Tik-it/Tickify-frontend
